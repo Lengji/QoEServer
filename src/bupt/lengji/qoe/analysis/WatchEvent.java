@@ -11,13 +11,12 @@ public class WatchEvent {
     public static final int FULLSCREEN = 5;
     public static final int FULLSCREEN_EXIT = 6;
     public static final int SEEK_LEFT = 7;
-    public static final int SEEK_RIGHR = 8;
+    public static final int SEEK_RIGHT = 8;
     public static final int STUCK = 9;
     public static final int RESOLUTION_SD = 10;
     public static final int RESOLUTION_HD = 11;
     public static final int RESOLUTION_UHD = 12;
     public static final int FINISH = 13;
-    public static final int QUIT = 14;
 
     private int event = 0;
     private long position = 0;
@@ -88,8 +87,8 @@ public class WatchEvent {
                 return "FULLSCREEN_EXIT";
             case SEEK_LEFT:
                 return "SEEK_LEFT";
-            case SEEK_RIGHR:
-                return "SEEK_RIGHR";
+            case SEEK_RIGHT:
+                return "SEEK_RIGHT";
             case STUCK:
                 return "STUCK";
             case RESOLUTION_SD:
@@ -100,8 +99,6 @@ public class WatchEvent {
                 return "RESOLUTION_UHD";
             case FINISH:
                 return "FINISH";
-            case QUIT:
-                return "QUIT";
             default:
                 return null;
         }
@@ -123,8 +120,8 @@ public class WatchEvent {
                 return FULLSCREEN_EXIT;
             case "SEEK_LEFT":
                 return SEEK_LEFT;
-            case "SEEK_RIGHR":
-                return SEEK_RIGHR;
+            case "SEEK_RIGHT":
+                return SEEK_RIGHT;
             case "STUCK":
                 return STUCK;
             case "RESOLUTION_SD":
@@ -135,8 +132,6 @@ public class WatchEvent {
                 return RESOLUTION_UHD;
             case "FINISH":
                 return FINISH;
-            case "QUIT":
-                return QUIT;
             default:
                 return 0;
         }
